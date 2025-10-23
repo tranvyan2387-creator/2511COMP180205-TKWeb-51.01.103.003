@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background: #eee;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
+.cv-card {
+    display: flex;
+    width: 600px;
+    background: #fff;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+.p1 {
+    background: #111;
+    color: #fff;
+    width: 35%;
+    padding: 30px 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.avatar-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.avatar {
+    width: 120px;
+    height: 120px;
+    background: #444;
+    border-radius: 50%;
+}
+.title{
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #f1c40f;
+    display: inline-block;
+    padding-bottom: 2px;
+}
+.text0 {
+    font-size: 13px;
+    color: #ddd;
+    margin-bottom: 6px;
+}
+.skill {
+    margin-bottom: 12px;
+}
+.skill-name {
+    font-size: 13px;
+    margin-bottom: 4px;
+    color: #eee;
+}
+.skill-bar {
+    height: 8px;
+    width: 100%;
+    background: #333;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+}
+.skill-bar::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #f1c40f;
+    width: 0%;
+}
+.skill-bar[data-value="60"]::after { width: 60%; }
+.skill-bar[data-value="50"]::after { width: 50%; }
+.skill-bar[data-value="80"]::after { width: 80%; }
+.skill-bar[data-value="75"]::after { width: 75%; }
+.reference {
+    margin-bottom: 10px;
+}
+.p2 {
+    width: 65%;
+    padding: 30px 40px;
+    color: #333;
+}
+.header {
+    margin-bottom: 25px;
+}
+.title-line {
+    font-size: 15px;
+    margin-top: 6px;
+    color: #555;
+}
+.title-role {
+    font-weight: 600;
+    color: #f1c40f;
+}
+.block {
+    margin-bottom: 25px;
+}
+.block-title {
+    border-bottom: 2px solid #f1c40f;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+.text{
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+.tt{
+    border-bottom: 2px solid #f1c40f;
+    padding-bottom: 5px;
+    display: inline-block;
+}

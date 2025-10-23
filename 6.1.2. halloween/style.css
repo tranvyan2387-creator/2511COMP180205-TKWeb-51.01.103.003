@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    color: #fff;
+    background: #000 url(img/bg.jpeg);
+}
+header {
+    background: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    padding: 20px;
+    border-bottom: 3px solid orange;
+}
+nav a {
+    color: orange;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav a.active, nav a:hover {
+    color: #fff;
+    text-shadow: 0 0 10px orange;
+}
+.banner {
+    text-align: center;
+    padding: 20px 20px 20px 20px;
+    background: rgba(0, 0, 0, 0.6);
+}
+.content {
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.7);
+    margin: 20px;
+    border-radius: 10px;
+}
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+.product-list li {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    width: 200px;
+}
+.product-list img {
+    width: 100px;
+    height: 100px;
+}
+.price {
+    color: orange;
+    font-weight: bold;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: auto;
+}
+input, textarea, button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1em;
+}
+button {
+    background: orange;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+}
+button:hover {
+    background: #ff6600;
+}
+footer {
+    text-align: center;
+    padding: 15px;
+    border-top: 3px solid orange;
+    background: rgba(0, 0, 0, 0.8);
+}
+body {
+  opacity: 0;
+  transition: opacity 1.5s ease-in;
+}
+body.fade-in {
+  opacity: 1;
+}
+.ghost {
+  position: fixed;
+  bottom: -50px;
+  width: 50px;
+  height: 50px;
+  background: url('images/ghost.png') no-repeat center/contain;
+  animation: floatGhost linear infinite;
+  opacity: 0.8;
+  z-index: 0;
+}
+img{
+    text-align: center;
+    height: 40vh;
+}
+@keyframes floatGhost {
+  from {
+    transform: translateY(0) translateX(0);
+  }
+  to {
+    transform: translateY(-120vh) translateX(50px);
+  }
+}
