@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <style>
+        .hh-header{
+            position: relative;
+            height: 170px;
+        }
+        .hh-logo{
+            position: absolute;
+            right: 0px;
+            width: 400px;
+        }
+        .hh-company{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 35px;
+            text-shadow: 0 0 2px black;
+            position: absolute;
+            top: 45px;
+            padding-bottom: 2px;
+            border-bottom: 1px dotted gray;
+        }
+        .hh-slogan{
+            position: absolute;
+            top: 100px;
+        }
+        .hh-sheet{
+            box-shadow: 0 0 5px lightgray;
+            border-radius: 10px;
+            padding: 5px;
+            position: relative;
+            top: -10px;
+            margin-top: 20px;
+        }
+        .hh-body{
+            padding: 5px;
+        }
+        .hh-cart ul{
+            padding: 0px;
+            margin: 0px;
+            list-style: none;
+            font-size: smaller;
+        }
+        .hh-cart img{
+            height: 30%;
+            width: 30%;
+            float: left;
+        }
+        .hh-card{
+            margin: 7px 0;
+        }
+        .hh-product{
+            text-align: center;
+            padding: 5px 2px;
+            display: inline-block;
+        }
+        .hh-product .card-body img{
+            height: 150px;
+            max-width: 95%;
+        }
+       .hh-sheet {
+            margin-top: 20px;
+        }
+        .img{
+        float: left;
+        }
+        article img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        footer {
+            clear: both;
+            margin-top: 30px;
+            background-color: white;
+            z-index: 10;
+            position: relative;
+        }
+        .container {
+            flex:1;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" style="height: auto;">
+        <header class="hh-header">
+            <h1 class="hh-company">FIT-HCMUE Shop</h1>
+            <h5 class="hh-slogan">Bring knowledge to everyone</h5>
+            <img class="hh-logo" src="">
+        </header>
+        <nav class="row navbar navbar-expand-lg bg-light">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Giới thiệu</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Sản phẩm</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Liên hệ</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Hỏi đáp</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Tài khoản
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                </div>
+            </div>
+            </nav>
+        </nav>
+    </div>
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-lg-9 col-md-8">
+                <div class="hh-sheet row">
+                    <article class="col-sm-9">
+                        <div class="row align-items-start">
+                            <div class="col-md-5">
+                                <img src="https://cdn.tgdd.vn/Products/Images/42/251192/iphone-14-pro-max-tim-thumb-600x600.jpg"  alt="iPhone 14 Pro Max">
+                            </div>
+                            <div class="col-md-7">
+                                <p class="text-muted mb-1">Điện thoại</p>
+                                <h3>iPhone 14 Pro MAX - 256GB</h3>
+                                <hr>
+                                <h4 class="text-danger">29,999,000 đ</h4>
+                                <div class="d-flex align-items-center mb-3">
+                                    <input type="number" value="1" style="width: 60px; height: 35px;" class="form-control me-2">
+                                    <button type="button" class="btn btn-primary me-2">Thêm vào giỏ</button>
+                                    <button type="button" class="btn btn-danger">Yêu thích</button>
+                                </div>
+                              
+                                <div class="hh-body m-auto">
+                                    <!--Chi tiết sản phẩm-->
+                                    <b>Thông tin sản phẩm:</b>
+                                    <br>Màn hình:6.7 inches, 2796 xx 1290-pixel
+                                    <br>Công nghệ màn hình: Super Retina XDR OLED
+                                    <br>Camera chính: 48MP, f/1.8, OIS
+                                    <br>Camera góc siêu rộng: 12MP, f/2.2, PDAF
+                                    <br>Camera tele: 12 MP, f/2.8, PDAF, OIS, 3x optical zoom
+                                    <br>Camera selfie: 12 MP, 1/1.9, 23mm, 1/3.6", PDAF
+                                    <br>RAM: 6 GB, 256 GB
+                                    <br>Thẻ SIM: 2 SIM (nano-SIM và eSIM)
+                                    <br>Tính năng màn hình: 120Hz, Always-On display, HDR,
+                                    <br>True Tone, Haptic Touch
+                                    <br>Pin: 4.323 mAh
+                                </div>
+                                <hr>
+                                <h6><b>Chia sẻ sản phẩm:</b></h6>
+                                <div class="social">
+                                    <ul class="social-links list-inline">
+                                    <li class="list-inline-item"><a href="#"><i class="bi bi-facebook"></i></a></li>
+                                    <li class="list-inline-item"><a href="#"><i class="bi bi-twitter-x"></i></a></li>
+                                    <li class="list-inline-item"><a href="#"><i class="bi bi-instagram"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <aside class="col-sm-3">
+                <div class="card hh-cart">
+                    <div class="card-header">
+                        <b>Giỏ hàng</b>
+                    </div>
+                    <div class="card-body now">
+                        <img class="col-md-5" src="img/giohang.png">
+                        <ul class="col-md-7">
+                            <li>10 sp</li>
+                            <li>5,000,000 đ</li>
+                            <li><a href="">Giỏ hàng</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card hh-card">
+                    <div class="card-header">
+                        <i class="bi bi-apple"></i>
+                        <b>Tìm kiếm</b>
+                    </div>
+                    <div class="body">
+                        <form>
+                            <input placeholder="Keywords" class="form-control">
+                        </form>
+                    </div>
+                </div>
+                <div class="card hh-card">
+                    <div class="card-header">
+                        <i class="bi bi-list-ul"></i>
+                        <b>Chủng loại</b>
+                    </div>
+                    <div class="list-group">
+                        <a href="#" class="list-group-item">
+                            Điện thoại
+                            <span class="badge badge-primary badge-pill">55</span>
+                        </a>
+                        <a href="#" class="list-group-item">Laptop</a>
+                        <a href="#" class="list-group-item">Tablet</a>
+                        <a href="#" class="list-group-item">Điều hòa</a>
+                        <a href="#" class="list-group-item">Tivi</a>
+                        <a href="#" class="list-group-item">Tủ lạnh</a>
+                        <a href="#" class="list-group-item">Điện gia dụng</a>
+                    </div>
+                </div>
+                <div class="card hh-header">
+                    <div class="card-header">
+                        <i class="bi bi-apple"></i>
+                        <b>Nhà cung cấp</b>
+                    </div>
+                    <div class="list-group">
+                        <a href="#" class="list-group-item">
+                            Apple
+                            <span class="badge badge-primary badge-pill">55</span>
+                        </a>
+                        <a href="#" class="list-group-item">Samsung</a>
+                        <a href="#" class="list-group-item">Nokia</a>
+                        <a href="#" class="list-group-item">LG</a>
+                        <a href="#" class="list-group-item">Sony Ericson</a>
+                        <a href="#" class="list-group-item">Dell</a>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+</body>
+</html>

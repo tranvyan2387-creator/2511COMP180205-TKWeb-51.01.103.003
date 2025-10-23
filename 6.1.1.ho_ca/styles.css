@@ -1,0 +1,150 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+body {
+    background: url("images/bg.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+#content {
+    position: relative;
+    width: 100%;
+    height: 600px;
+}
+#shark {
+    position: absolute;
+    left: 100px;
+    top: 350px;
+    animation: Shark 12s linear infinite;
+}
+@keyframes Shark {
+    0%   {left: 100px; top: 350px;}
+    20%  {left: 300px; top: 300px;}
+    40%  {left: 600px; top: 380px;}
+    60%  {left: 900px; top: 250px;}
+    80%  {left: 600px; top: 200px;}
+    100% {left: 100px; top: 350px; transform: scaleX(-1);}
+}
+#turtle {
+    position: absolute;
+    left: 0;
+    top: 480px;
+    animation: Turtle 20s ease-in-out infinite;
+}
+@keyframes Turtle {
+    0%   {left: 0; top: 480px;}
+    25%  {left: 300px; top: 460px;}
+    50%  {left: 600px; top: 470px;}
+    75%  {left: 850px; top: 490px;}
+    100% {left: 0; top: 480px; transform: scaleX(-1);}
+}
+#diver1 {
+    position: absolute;
+    left: 50px;
+    top: 200px;
+    animation: Diver1 15s ease-in-out infinite;
+}
+@keyframes Diver1 {
+    0%   {left: 50px; top: 200px;}
+    20%  {left: 300px; top: 220px;}
+    40%  {left: 600px; top: 180px;}
+    60%  {left: 850px; top: 230px;}
+    80%  {left: 600px; top: 250px;}
+    100% {left: 50px; top: 200px; transform: scaleX(-1);}
+}
+#diver2 {
+    position: absolute;
+    left: 100px;
+    top: 300px;
+    animation: Diver2 17s linear infinite;
+}
+@keyframes Diver2 {
+    0%   {left: 100px; top: 300px;}
+    25%  {left: 400px; top: 280px;}
+    50%  {left: 750px; top: 350px;}
+    75%  {left: 400px; top: 320px;}
+    100% {left: 100px; top: 300px; transform: scaleX(-1);}
+}
+#diver3 {
+    position: absolute;
+    left: 0px;
+    top: 400px;
+    animation: Diver3 19s ease-in-out infinite;
+}
+@keyframes Diver3 {
+    0%   {left: 0px; top: 400px;}
+    25%  {left: 250px; top: 380px;}
+    50%  {left: 600px; top: 420px;}
+    75%  {left: 850px; top: 390px;}
+    100% {left: 0px; top: 400px; transform: scaleX(-1);}
+}
+#b1 {
+    position: absolute;
+    left: 0;
+    top: 400px;
+    animation: B1 19s ease-in-out infinite;
+}
+@keyframes B1 {
+    0%   {left: 100px; top: 600px;}
+    100% {left: 100px; top: 0px;}
+}
+#b4 {
+    position: absolute;
+    left: 0px;
+    top: 400px;
+    animation: B4 15s ease-in-out infinite;
+}
+@keyframes B4 {
+    0%   {left: 350px; top: 600px;}
+    100% {left: 350px; top: 0px;}
+}
+#b3 {
+    position: absolute;
+    left: 0;
+    top: 400px;
+    animation: B3 19s ease-in-out infinite;
+}
+@keyframes B3 {
+    0%   {left: 900px; top: 600px;}
+    100% {left: 900px; top: 0px;}
+}
+#b2 {
+    position: absolute;
+    left: 0;
+    top: 400px;
+    animation: B2 17s ease-in-out infinite;
+}
+@keyframes B2 {
+    0%   {left: 700px; top: 600px;}
+    100% {left: 700px; top: 0px;}
+}
+#fish1 {
+    position: absolute;
+    left: 200px;
+    top: 750px;
+    animation: F1 19s linear infinite;
+}
+@keyframes F1 {
+    0%   {left: 100px; top: 350px;}
+    20%  {left: 300px; top: 300px;}
+    40%  {left: 600px; top: 380px;}
+    60%  {left: 900px; top: 250px;}
+    80%  {left: 600px; top: 200px;}
+    100% {left: 100px; top: 350px; transform: scaleX(-1);}
+}
+#fish2 {
+    position: absolute;
+    left: 200px;
+    top: 750px;
+    animation: F2 19s linear infinite;
+}
+@keyframes F2 {
+    0%   {left: 1000px; top: 600px;}
+    20%  {left: 300px; top: 600px;}
+    40%  {left: 800px; top: 400px;}
+    60%  {left: 700px; top: 250px;}
+    80%  {left: 600px; top: 900px;}
+    100% {left: 100px; top: 350px; transform: scaleX(-1);}
+}
