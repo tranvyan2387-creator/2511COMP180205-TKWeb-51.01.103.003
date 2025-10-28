@@ -1,6 +1,6 @@
 html, body {
     height: 100%;
-    margin: 20;
+    margin: 0;
     padding: 0;
     overflow: hidden;
 }
@@ -149,3 +149,4 @@ body {
     100% {left: 100px; top: 350px; transform: scaleX(-1);}
 
 }
+
