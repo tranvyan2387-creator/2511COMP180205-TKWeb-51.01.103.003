@@ -1,6 +1,6 @@
 html, body {
     height: 100%;
-    margin: 0;
+    margin: 20;
     padding: 0;
     overflow: hidden;
 }
@@ -147,4 +147,5 @@ body {
     60%  {left: 700px; top: 250px;}
     80%  {left: 600px; top: 900px;}
     100% {left: 100px; top: 350px; transform: scaleX(-1);}
+
 }
